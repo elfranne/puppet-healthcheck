@@ -4,13 +4,10 @@ require 'spec_helper_acceptance'
 require 'webmock/rspec'
 
 describe 'healthcheck' do
-
   before(:all) do
     WebMock.disable_net_connect!(allow_localhost: true)
-    stub_request(:get, "http://example.com")
-      .to_return(status: 200, body: "{\"status\":\"ready\"}", headers: {'Content-Type' => 'application/json'})
+    stub_request(:get, 'http://example.com').to_return(status: 200, body: '{"status":"ready"}', headers: {'Content-Type' => 'application/json'})
   end
-
   it_behaves_like 'an idempotent resource' do
     let(:manifest) do
       <<-PUPPET
