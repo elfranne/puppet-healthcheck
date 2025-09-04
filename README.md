@@ -52,7 +52,7 @@ See https://github.com/voxpupuli/puppet-healthcheck/blob/b3723805d629cc01767a2fb
 ```puppet
 http_conn_validator { 'foo-machine home' :
   host    => '127.0.0.1',
-  port    => 80,
+  port    => 443,
   use_ssl => true,
 }
 ```

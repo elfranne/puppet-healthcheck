@@ -1,4 +1,10 @@
 ---
+Gemfile:
+  optional:
+    ':test':
+      - gem: webmock
+    ':system_tests':
+      - gem: webmock
 spec/spec_helper_acceptance.rb:
   unmanaged: false
 .puppet-lint.rc:
