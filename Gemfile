@@ -16,7 +16,7 @@ end
 
 group :system_tests do
   gem 'voxpupuli-acceptance', '~> 4.0',  :require => false
-  gem 'webmock',                    :require => false
+  gem 'webmock',                         :require => false
 end
 
 group :release do
