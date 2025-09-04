@@ -1,7 +1,7 @@
 ---
 Gemfile:
   optional:
-    ':test':
+    ':system_tests':
       - gem: webmock
 spec/spec_helper_acceptance.rb:
   unmanaged: false
